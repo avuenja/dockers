@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  php:
+    build: .
+    container_name: php72-apache
+    restart: always
+    volumes:
+      - ./html:/var/www/html
+    ports:
+      - 80:80
